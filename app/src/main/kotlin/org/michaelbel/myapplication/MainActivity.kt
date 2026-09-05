@@ -12,8 +12,9 @@ class MainActivity : ComponentActivity() {
        val smbService = SmbScannerService(
     host = "192.168.99.201",
     shareName = "Tableros",
-    user = "Tuvanosa",          // Tu usuario de Windows
-    pass = "TU_CONTRASEÑA"      // La contraseña con la que inicias sesión en la laptop/red
+    domain = "",              // Si el usuario en cmdkey no muestra prefijo (ej. DOMINIO\juan.ochoa), déjalo vacío ""
+    user = "juan.ochoa",      // Usuario exacto registrado en la red
+    pass = "CONTRASEÑA_DE_JUAN_OCHOA" // Contraseña de red asignada a esa cuenta
 )
         )
 
